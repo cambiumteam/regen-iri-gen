@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "regen-iri-gen"
+version = "0.1.0"
+description = "Library for generating Regen IRIs"
+authors = []
+license = "MIT"
+readme = "README.md"
+packages = [{include = "regen_iri_gen"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.6.1"
+base58 = "^2.1.1"
+pyld = "^2.0.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
